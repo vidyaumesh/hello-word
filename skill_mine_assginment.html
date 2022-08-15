@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body,
+      html {
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .bg-img {
+        /* The image used */
+        background-image: url("https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        min-height: 3800px;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      /* Add styles to the form container */
+      .container {
+        position: absolute;
+        center: 0;
+        margin: 700px;
+        max-width: 400px;
+        padding: 20px;
+        background-color: white;
+      }
+
+      /* Full-width input fields */
+      input[type=text],
+      input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 15px 0;
+        border: none;
+        background: #f1f1f1;
+      }
+
+      input[type=text]:focus,
+      input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+
+      /* Set a style for the submit button */
+      .btn {
+        background-color: #4267B2;
+        color: white;
+        padding: 14px 20px;
+        margin: 10px 0;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        position: right;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-img">
+      <form action="/action_page.php" class="container"  style="margin: center; width: 550px;" >
+        <h1 class="h">
+          <i>
+            <center>Themify</center>
+          </i>
+        </h1>
+        <span class="tb_login_username_text">Username or Email</span>
+        <input type="text" name="log" placeholder="Enter Username" required="required">
+        <span class="tb_login_username_text">password</span>
+        
+        <input type="text" name="log"placeholder="Enter Password" required="required">
+        <a href="https://themify.me/demo/themes/wp-login.php?action=lostpassword">Forgotten Password?</a>
+        <br>
+         <input name="rememberme" type="checkbox" value="forever">
+        <span class="tb_login_remember_text">Remember Me</span>
+       
+        <button class="btn">
+          <b>LOG IN</b>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
